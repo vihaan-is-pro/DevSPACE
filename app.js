@@ -25,12 +25,13 @@ import {
 
 // Firebase setup
 const firebaseConfig = {
-  apiKey: "AIzaSyDxir2kWDWAfRnWe-5KtZImTls0Iiexj9s",
-  authDomain: "stellar-net-fcee6.firebaseapp.com",
-  projectId: "stellar-net-fcee6",
-  storageBucket: "stellar-net-fcee6.firebasestorage.app",
-  messagingSenderId: "101106207112",
-  appId: "1:101106207112:web:eee63537767e71c344d23d"
+  apiKey: "AIzaSyC_uEu_-6_1i6um1CbNKOuP0d8kyVYP5pA",
+  authDomain: "bbps-pp-devspace.firebaseapp.com",
+  projectId: "bbps-pp-devspace",
+  storageBucket: "bbps-pp-devspace.firebasestorage.app",
+  messagingSenderId: "518178103579",
+  appId: "1:518178103579:web:62a9a543b52ac7cb6033be",
+  measurementId: "G-BB4RRR191E"
 };
 
 const app = initializeApp(firebaseConfig);
