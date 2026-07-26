@@ -241,7 +241,44 @@ window.logoutUser = async function () {
     await signOut(auth);
     switchPage("landing");
 };
+window.handleGoogleLogin = async function () {
+    const provider = new GoogleAuthProvider();
+    const errEl = document.getElementById("auth-error");
 
+    try {
+        const result = await signInWithPopup(auth, provider);
+        const user = result.user;
+
+        const userRef = doc(db, "users", user.uid);
+        const snap = await getDoc(userRef);
+
+        if (!snap.exists()) {
+            const profile = {
+                username: user.displayName || user.email.split("@")[0],
+                department: "Engineering",
+                email: user.email,
+                uid: user.uid,
+                status: "online",
+                friends: [],
+                bio: ""
+            };
+            await setDoc(userRef, profile);
+            currentUserData = profile;
+        } else {
+            currentUserData = snap.data();
+            await updateDoc(userRef, { status: "online" });
+        }
+
+        switchPage("home");
+    } catch (err) {
+        if (errEl) {
+            errEl.style.display = "block";
+            errEl.innerText = err.message;
+        } else {
+            console.error(err);
+        }
+    }
+};
 onAuthStateChanged(auth, async (user) => {
     const nav = document.getElementById("main-nav");
     const authBox = document.getElementById("landing-auth-buttons");
