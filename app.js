@@ -673,14 +673,9 @@ document.getElementById("chat-input").addEventListener("keydown", function (e) {
     }
 });
 
+// Your personal Curator feed script
 (function(){
 var i,e,d=document,s="script";i=d.createElement("script");i.async=1;i.charset="UTF-8";
-i.src="https://cdn.curator.io/published/d2b5c0cc-35ea-4a59-8de5-f748ed40ac18.js";
-e=d.getElementsByTagName(s)[0];e.parentNode.insertBefore(i, e);
-})();
-
-(function(){
-var i,e,d=document,s="script";i=d.createElement("script");i.async=1;i.charset="UTF-8";
-i.src="https://cdn.curator.io/published/d2b5c0cc-35ea-4a59-8de5-f748ed40ac18.js";
+i.src="https://cdn.curator.io/published/e46b0047-5ccf-4c46-be37-60a9276d9c52.js";
 e=d.getElementsByTagName(s)[0];e.parentNode.insertBefore(i, e);
 })();
