@@ -2,18 +2,13 @@
 # Submission By - Bal Bharati Public School, Pitampura
 
 ## Project/Prototype Link 
-[https://nakshtheking12.github.io/Oxamite2026-Devspace-BBPS-Pitampura/]
+https://vihaan-is-pro.github.io/DevSPACE/
 
 ## Demo Video
 https://tinyurl.com/DEMOVIDEO-DEVSPACE
 
 ## StellarNet 
 A space-themed social networking platform designed for seamless communication, networking, and collaboration.
-
-## Team Members 
-- Naksh Saluja 
-- Arpit Bansal
-- Vihaan Yadav 
 
 ## Features
 -  User Profiles (Edit username and bio)
